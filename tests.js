@@ -1,3 +1,8 @@
+////// variables to test////
+
+let person = {firstname: `nick`};
+
+
 // Unit tests for the helloWorld function
 describe('helloWorld', function() {
     it('should be a defined function', function() {
@@ -26,5 +31,32 @@ describe(`sayHello`, function(){
     });
     it(`should return "Hello, Pat!"`, function () {
         expect(sayHello(`Pat`)).toBe(`Hello, Pat!`)
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(`5`)).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(null)).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(``)).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello([2, 3, 4])).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(person)).toBe("Hello, World!")
+    });
+    it(`should return Hello, World!`, function () {
+        expect(sayHello(sayHello)).toBe("Hello, World!")
     });
 });
